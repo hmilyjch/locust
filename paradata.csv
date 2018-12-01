@@ -1,0 +1,3 @@
+1,/recommendPoetry,随机一首
+2,/singlePoetry,随机一句
+3,/getTangPoetry?page=1&count=20,随机唐朝古诗词
