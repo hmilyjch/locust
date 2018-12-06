@@ -7,8 +7,8 @@ import re
 # print(re.match('a','alex have dream'))
 # print((re.match('a','alex have dream')).group())
 
-# print(re.split('[,]','a,b,c,d'))
-# print(re.split('[ab]','abcd')) #['', '', 'cd']，先按'a'分割得到''和'bcd',再对''和'bcd'分别按'b'分割
+print(re.split('[,]','a,b,c,d'))
+print(re.split('[ab]','abcd')) #['', '', 'cd']，先按'a'分割得到''和'bcd',再对''和'bcd'分别按'b'分割
 
 # print('===>',re.sub('a','A','alex have dream')) #===> Alex have dream，不指定n，默认替换所有
 # print('===>',re.sub('a','A','alex have dream',1)) #===> Alex have dream
@@ -20,6 +20,7 @@ print(obj.search('abc123eeee').group()) #12
 print(obj.findall('abc123eeee')) #['12'],重用了obj
 
 
+print(re.split('/','http://www.sogou.com/docs/terms.htm?v=1'))
 
 
-
+print('http://www.sogou.com/docs/terms.htm?v=1'[20:])

@@ -15,3 +15,12 @@ for i in range(7):
 for j in range(24):
     t=threading.Thread(target=consumer,args=(j,))
     t.start()
+
+
+
+
+
+
+
+
+

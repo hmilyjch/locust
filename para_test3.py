@@ -20,6 +20,7 @@ class UserBehavior(TaskSet):
              'phone': data['phone']
             }
         self.client.post('/register', data=payload)
+        self.locust.user_data_queue.put_nowait(data)
 
 class WebsiteUser(HttpLocust):
     host = 'http://debugtalk.com'
