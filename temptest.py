@@ -5,3 +5,7 @@ root = etree.HTML("<li><a onclick=\"st(this,'web2ww','wenwen')\" href=\"https://
 
 
 print(root.find(".//a").attrib['href'])
+
+
+
+
